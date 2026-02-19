@@ -5,26 +5,26 @@
 class Keel < Formula
   desc "Structural code enforcement for LLM coding agents"
   homepage "https://keel.engineer"
-  version "0.2.0"
+  version "0.2.2"
   license "FSL-1.1-MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/FryrAI/Keel/releases/download/v#{version}/keel-darwin-arm64"
-      sha256 "1402a3235b20d2cf2568cbb14d6e5952839edca3d08087a59f23f40c2c568600"
+      sha256 "d74a4f553cbfbb68da3957a6965460aeb96b34fa2cb92eb38d206ce42e12c820"
     else
       url "https://github.com/FryrAI/Keel/releases/download/v#{version}/keel-darwin-amd64"
-      sha256 "c4ab29217af1158074ab282de592f6444b5b61c399ce0b3d887497a670e58480"
+      sha256 "a6bcb76d6a45f410d54a600f3fe427da41be009594eadd842c9b4bb0ab259a1c"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/FryrAI/Keel/releases/download/v#{version}/keel-linux-arm64"
-      sha256 "af951ca461d37ab3354f730b0cca63e7773c8ab34f69299218bb8974eaea87e2"
+      sha256 "8b7a3e6737eb09ab381a8d71d2b99a13e3944a75a1ac71217939aaaced999666"
     else
       url "https://github.com/FryrAI/Keel/releases/download/v#{version}/keel-linux-amd64"
-      sha256 "3ebe8bb5eb100a421e1b89fbc2997f367cc68033432ad653b06a2143e4dd003b"
+      sha256 "29e76274f5393f839594a578e896807d8f5525d5c4d916564868ac5cb2cb25c8"
     end
   end
 
