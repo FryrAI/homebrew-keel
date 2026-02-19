@@ -1,30 +1,30 @@
 # Homebrew formula for keel — structural code enforcement
-# Updated automatically by CI on each release.
-# To install: brew tap FryrAI/tap && brew install keel
+# This template is updated by CI on each release.
+# To use as a tap: brew tap FryrAI/keel && brew install keel
 
 class Keel < Formula
   desc "Structural code enforcement for LLM coding agents"
   homepage "https://keel.engineer"
-  version "0.1.0"
+  version "0.2.0"
   license "FSL-1.1-MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/FryrAI/Keel/releases/download/v#{version}/keel-darwin-arm64"
-      sha256 "7288ca8804c5baaf6679ef3b73573afdb90fa2133156dbc9d33209f37c979da5"
+      sha256 "1402a3235b20d2cf2568cbb14d6e5952839edca3d08087a59f23f40c2c568600"
     else
       url "https://github.com/FryrAI/Keel/releases/download/v#{version}/keel-darwin-amd64"
-      sha256 "5c49bf6419bd6b7ce1da883e00f8026132ee254f305e129ae953e8306262c336"
+      sha256 "c4ab29217af1158074ab282de592f6444b5b61c399ce0b3d887497a670e58480"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/FryrAI/Keel/releases/download/v#{version}/keel-linux-arm64"
-      sha256 "a1d9cb625fba45addc067cce53b5da87a3871eea2e982e62df09dba1f75ebccf"
+      sha256 "af951ca461d37ab3354f730b0cca63e7773c8ab34f69299218bb8974eaea87e2"
     else
       url "https://github.com/FryrAI/Keel/releases/download/v#{version}/keel-linux-amd64"
-      sha256 "8e1a16d26c80f402217da518fead0c9872b1cac47aad8f56f41ac37fd6e284d4"
+      sha256 "3ebe8bb5eb100a421e1b89fbc2997f367cc68033432ad653b06a2143e4dd003b"
     end
   end
 
